@@ -1,0 +1,27 @@
+
+::::Strategy Pattern::::
+The strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+Strategy let's the algorithm vary independently from the clients that use it.
+
+::::Design::::
+A. Duck - Client makes use of an encapsulated family of algorithms for flying and quacking behaviour
+    Subclasses:
+    1.MallardDuck
+    2.ModelDuck
+
+B. Behaviour : Encapsulated Fly and Quack Behaviour. Think of each set of behaviours as a family of algorithms.
+Interfaces and implementations:-
+1: FlyBehaviour
+Impl: FlyWithWings, FlyNoWay
+2: QuackBehaviour
+Impl:  Quack , Squeak , MuteQuack
+
+::::Object Oriented Principles learnt::::
+1. Identify aspects of your application which may vary and separate them from what stays the same.
+
+2. Program to an interface, not an implementation. Interface refers to a "Supertype" and not necessarily an interface.
+
+3. Favour composition over inheritance. "Has-A" is better than "Is-A" relationship.
+    Creating systems using composition gives you a lot more flexibility. Not only does it let you encapsulate a family of
+    algorithms into their own set of classes, but it also lets you change behavior at runtime as long as the object you’re
+    composing with implements the correct behavior interface.
